@@ -1,0 +1,117 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  padding: 18px;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 14px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Make cards fit their grid cells */
+
+.videoGrid > * {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Desktop and laptop */
+
+@media (max-width: 1200px) {
+  .home {
+    padding: 16px;
+  }
+
+  .videoGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .home {
+    padding: 12px;
+  }
+
+  .videoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .home {
+    padding: 8px;
+  }
+
+  .videoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+/* Extra-small mobile */
+
+@media (max-width: 360px) {
+  .home {
+    padding: 6px;
+  }
+
+  .videoGrid {
+    gap: 6px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .videoGrid {
+    scroll-behavior: auto;
+  }
+}
+
+
+.loadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 28px 12px;
+  color: #777;
+  font-size: 14px;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-top-color: #4f46e5;
+  border-radius: 50%;
+  animation: homeSpin 0.7s linear infinite;
+}
+
+.endMessage {
+  padding: 24px 12px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+@keyframes homeSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

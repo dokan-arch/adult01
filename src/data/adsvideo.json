@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Nature Video Advertisement",
+    "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    "thumbnail": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=640&h=360&fit=crop",
+    "siteurl": "https://example.com/nature"
+  },
+  {
+    "id": 2,
+    "title": "Ocean Video Advertisement",
+    "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    "thumbnail": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=640&h=360&fit=crop",
+    "siteurl": "https://example.com/ocean"
+  }
+]

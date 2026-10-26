@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Earbuds",
+    "thumbnail": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/earbuds",
+    "buttonText": "Shop Now",
+    "label": "Affiliate"
+  },
+  {
+    "id": 2,
+    "title": "Upgrade Your Smartphone",
+    "thumbnail": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/smartphone",
+    "buttonText": "View Deal",
+    "label": "Affiliate"
+  },
+  {
+    "id": 3,
+    "title": "Comfortable Gaming Headset",
+    "thumbnail": "https://images.unsplash.com/photo-1599669454699-248893623440?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/headset",
+    "buttonText": "Explore",
+    "label": "Affiliate"
+  },
+  {
+    "id": 4,
+    "title": "Smart Fitness Watch",
+    "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/smartwatch",
+    "buttonText": "Discover",
+    "label": "Affiliate"
+  },
+  {
+    "id": 5,
+    "title": "Mechanical Gaming Keyboard",
+    "thumbnail": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/keyboard",
+    "buttonText": "Shop Now",
+    "label": "Affiliate"
+  },
+  {
+    "id": 6,
+    "title": "Premium Wireless Mouse",
+    "thumbnail": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/mouse",
+    "buttonText": "View Deal",
+    "label": "Affiliate"
+  },
+  {
+    "id": 7,
+    "title": "Portable Bluetooth Speaker",
+    "thumbnail": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/speaker",
+    "buttonText": "Explore",
+    "label": "Affiliate"
+  },
+  {
+    "id": 8,
+    "title": "Laptop for Work and Study",
+    "thumbnail": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/laptop",
+    "buttonText": "Find Yours",
+    "label": "Affiliate"
+  },
+  {
+    "id": 9,
+    "title": "Mirrorless Digital Camera",
+    "thumbnail": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/camera",
+    "buttonText": "Discover",
+    "label": "Affiliate"
+  },
+  {
+    "id": 10,
+    "title": "Power Bank for Everyday Use",
+    "thumbnail": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=640&h=360&fit=crop",
+    "affiliateUrl": "https://example.com/affiliate/powerbank",
+    "buttonText": "Shop Now",
+    "label": "Affiliate"
+  }
+]

@@ -1,0 +1,249 @@
+.adsGrid {
+  --accent: #f52365;
+  --accent-hover: #ff3e79;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  width: 100%;
+  padding: 24px 0;
+}
+
+/* Ad Card */
+
+.adCard {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  background: #11121a;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.adCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(245, 35, 101, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.24);
+}
+
+/* Thumbnail */
+
+.adCard img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #1b1c26;
+  transition: transform 350ms ease;
+}
+
+.adCard:hover img {
+  transform: scale(1.045);
+}
+
+/* Affiliate Badge */
+
+.adLabel {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: rgba(10, 11, 17, 0.78);
+  color: #ff8bab;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Content */
+
+.adContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px;
+}
+
+.adContent h3 {
+  margin: 0;
+  color: #f5f5fa;
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.45;
+  letter-spacing: -0.35px;
+  overflow-wrap: anywhere;
+  transition: color 180ms ease;
+}
+
+.adCard:hover .adContent h3 {
+  color: #ff7ca2;
+}
+
+.adContent p {
+  display: -webkit-box;
+  margin: 9px 0 18px;
+  overflow: hidden;
+  color: #a1a3b4;
+  font-size: 13px;
+  line-height: 1.75;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Affiliate Button */
+
+.adContent a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 43px;
+  margin-top: auto;
+  padding: 11px 16px;
+  border: 1px solid rgba(245, 35, 101, 0.25);
+  border-radius: 11px;
+  background: linear-gradient(135deg, #f52365, #d91452);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 750;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 5px 14px rgba(245, 35, 101, 0.13);
+  transition:
+    background 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.adContent a::after {
+  content: "↗";
+  font-size: 16px;
+  line-height: 1;
+}
+
+.adContent a:hover {
+  background: linear-gradient(135deg, #ff3e79, #ed165a);
+  box-shadow: 0 7px 20px rgba(245, 35, 101, 0.25);
+}
+
+.adContent a:active {
+  transform: scale(0.98);
+}
+
+.adContent a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .adsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .adContent {
+    padding: 16px;
+  }
+
+  .adContent h3 {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 560px) {
+  .adsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .adCard {
+    border-radius: 13px;
+  }
+
+  .adLabel {
+    top: 8px;
+    left: 8px;
+    padding: 5px 7px;
+    border-radius: 6px;
+    font-size: 9px;
+  }
+
+  .adContent {
+    padding: 12px;
+  }
+
+  .adContent h3 {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .adContent p {
+    margin: 7px 0 13px;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .adContent a {
+    min-height: 38px;
+    gap: 5px;
+    padding: 9px 7px;
+    border-radius: 9px;
+    font-size: 11px;
+  }
+}
+
+/* Very small screens */
+
+@media (max-width: 350px) {
+  .adsGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .adContent h3 {
+    font-size: 16px;
+  }
+
+  .adContent p {
+    font-size: 12px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .adCard,
+  .adCard img,
+  .adCard h3,
+  .adContent a {
+    transition: none;
+  }
+
+  .adCard:hover {
+    transform: none;
+  }
+
+  .adCard:hover img {
+    transform: none;
+  }
+}
